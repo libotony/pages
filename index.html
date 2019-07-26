@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang=en>
+
+    <head>
+
+        <meta name=viewport content="width=device-width,initial-scale=1">
+        <title>Insight</title>
+    </head>
+
+    <body>
+        <div id=app></div>
+        <script>
+            const el = document.createElement('h1')
+
+            if(window.connex){
+                el.innerText = 'Connex ' + JSON.stringify(window.connex)
+            }else{
+                el.innerText = 'No Connex ' + JSON.stringify(window.connex)
+            }
+            document.querySelector('div#app').append(el)
+
+            
+        </script>
+    </body> 
+</html>
